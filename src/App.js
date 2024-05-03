@@ -7,9 +7,9 @@ import { useState } from 'react';
 import './index.css';
 
 function App() {
-    const [items, setItems] = useState(JSON.parse(localStorage.getItem('todolist')) || []);
+    const [items, setItems] = useState(JSON.parse(localStorage.getItem('todolist')) || [])
     const [newItem, setNewItem] = useState('')
-    const [search, setSearch]= useState('');
+    const [search, setSearch]= useState('')
 
     const setAndSaveItems = (newItems) => {
         setItems(newItems);
